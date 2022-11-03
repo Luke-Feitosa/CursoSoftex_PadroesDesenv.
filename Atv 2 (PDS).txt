@@ -1,0 +1,33 @@
+class Veiculo {
+  constructor(modelo, marca, cor, numeroRodas) {
+    this.modelo = modelo;
+    this.marca = marca;
+    this.cor = cor;
+    this.numeroRodas = numeroRodas;
+  }
+}
+
+class hatch extends Veiculo {
+  constructor(modelo, marca, cor, numeroRodas) {
+    super(modelo, marca, cor, numeroRodas);
+  }
+  modelo() {
+    this.modelo = "hatch";
+    return this.modelo;
+  }
+}
+class sedan extends Veiculo {
+  constructor(modelo, marca, cor, numeroRodas) {
+    super(modelo, marca, cor, numeroRodas);
+  }
+  modelo() {
+    this.modelo = "sedan";
+    return this.modelo;
+  }
+}
+const app1 = new hatch("ka", "Ford", "Branco", manual);
+app1.modelo();
+const app2 = new sedan("ka+", "Ford", "Preto", automatic);
+app2.modelo();
+
+console.log(app1, app2);
