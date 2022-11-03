@@ -1,0 +1,20 @@
+class AdaptadorPato {
+  falarPato() {
+    return "Quack";
+  }
+  comer() {
+    return "Hmm";
+  }
+}
+
+class Galinha extends AdaptadorPato {
+  falarGalinha() {
+    return "cocó";
+  }
+  comer() {
+    return "Hummm!";
+  }
+}
+
+const pato = new Galinha();
+console.log(pato.falarGalinha());
