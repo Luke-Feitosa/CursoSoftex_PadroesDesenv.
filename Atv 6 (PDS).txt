@@ -1,0 +1,11 @@
+class observador {
+  TextEditor(insertLine, text){
+      insertLine() = lineNumber & text
+      lineNumber = 'Texto'
+  } 
+  removeLine(lineNumber) {
+      return text - lineNumber
+  } 
+  openTextEditor()
+  saveTextEditor()
+}
